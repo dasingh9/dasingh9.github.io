@@ -1,1 +1,128 @@
-Hellow world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Davinder - Full Stack Developer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+            color: #333;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #2b6cb0;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #4a5568;
+        }
+        .intro {
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        .repositories {
+            padding: 30px 20px;
+        }
+        .repo-list {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .repo-list a {
+            display: block;
+            font-size: 1.1rem;
+            padding: 10px;
+            background-color: #edf2f7;
+            margin: 10px 0;
+            color: #2b6cb0;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .repo-list a:hover {
+            transform: scale(1.05);
+            background-color: #cbd5e0;
+        }
+        footer {
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+        .wave {
+            animation: wave-animation 1.5s infinite ease-in-out;
+            display: inline-block;
+        }
+        @keyframes wave-animation {
+            0% { transform: rotate(0deg); }
+            20% { transform: rotate(-20deg); }
+            40% { transform: rotate(10deg); }
+            60% { transform: rotate(-10deg); }
+            80% { transform: rotate(5deg); }
+            100% { transform: rotate(0deg); }
+        }
+        .tech-stack {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2b6cb0;
+        }
+        .emphasis {
+            color: #dd6b20;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>👋 Hi, I’m Davinder <span class="wave">👋</span></h1>
+    <p class="intro">A clean coder and Full Stack Developer</p>
+    <p>I work with <strong>JavaScript, Node.js, React, Next.js, Angular</strong></p>
+    <p>💞️ I love architecture design for complex problems / systems</p>
+</header>
+
+<section class="repositories">
+    <h2>My Projects and Repositories</h2>
+    <div class="repo-list">
+        <h3>🟢 Node.js & Backend Development</h3>
+        <a href="https://github.com/dasingh9/rest-api-nodejs-mongodb" target="_blank">Node.js REST API with MongoDB</a>
+        <a href="https://github.com/dasingh9/games-api" target="_blank">Games API</a>
+        <a href="https://github.com/dasingh9/node-backend-api-cognito-authentication" target="_blank">Backend API with Cognito Authentication</a>
+        
+        <h3>🟣 React & Frontend Development</h3>
+        <a href="https://github.com/dasingh9/games-react-app" target="_blank">Games React App</a>
+        <a href="https://github.com/dasingh9/react-cognito-authentication" target="_blank">React Cognito Authentication</a>
+        <a href="https://github.com/dasingh9/first-next-app" target="_blank">First Next.js App</a>
+        
+        <h3>🔵 CICD Workflows</h3>
+        <a href="https://github.com/dasingh9/send-emails-using-lambda" target="_blank">Send Emails using AWS Lambda</a>
+        <a href="https://github.com/dasingh9/deploy-nodejs-express-api-to-ec2-container" target="_blank">Deploy Node.js Express API to EC2</a>
+        
+        <h3>🟠 Static Sites</h3>
+        <a href="https://github.com/dasingh9/scoreboard" target="_blank">Scoreboard</a>
+        <a href="https://github.com/dasingh9/my-static-site" target="_blank">My Static Site</a>
+        <a href="https://github.com/dasingh9/binary-visual" target="_blank">Binary Visual</a>
+        <a href="https://github.com/dasingh9/easter-eggs" target="_blank">Easter Eggs</a>
+
+        <h3>🧪 Unit Tests</h3>
+        <a href="https://github.com/dasingh9/exercise-nodejs-unit-tests" target="_blank">Node.js Unit Tests</a>
+        
+        <h3>🗄️ SQL</h3>
+        <a href="https://github.com/dasingh9/sql-demos" target="_blank">SQL Demos</a>
+    </div>
+</section>
+
+<footer>
+    <p>Built by Davinder © 2024</p>
+</footer>
+
+</body>
+</html>
