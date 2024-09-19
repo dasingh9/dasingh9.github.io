@@ -1,0 +1,139 @@
+  /* Base Card Style */
+  .box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+  .box-w-100 { width: 100px; }
+  .box-w-150 { width: 150px; }
+  .box-w-200 { width: 200px; }
+  .box-w-250 { width: 250px; }
+  .box-w-300 { width: 300px; }
+
+  .box:hover {
+    box-shadow: none;
+  }
+
+  /* Drop Shadow Themes */
+  .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(14px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+    
+  .box {
+	margin:20px;
+  }
+
+  .box:hover::before {
+    opacity: 1;
+  }
+
+  /* Fuchsia Theme */
+  .box-theme-fuchsia::before {
+    background: linear-gradient(123deg, #d14600, #c300e0, #6842ff);
+  }
+  
+  .box-theme-fuchsia-dark::before {
+    background: linear-gradient(123deg, #fa6f00, #e433ff, #8575ff);
+  }
+
+  /* Indigo Theme */
+  .box-theme-indigo::before {
+    background: linear-gradient(123deg, #0073e5, #295eff, #6842ff);
+  }
+
+  .box-theme-indigo-dark::before {
+    background: linear-gradient(123deg, #0096fa, #5c7fff, #8575ff);
+  }
+
+  /* Orange Theme */
+  .box-theme-orange::before {
+    background: linear-gradient(123deg, #d600ba, #eb003b, #d14600);
+  }
+
+  .box-theme-orange-dark::before {
+    background: linear-gradient(123deg, #ff1ae0, #ff386a, #fa6f00);
+  }
+
+  /* Teal Theme */
+  .box-theme-teal::before {
+    background: linear-gradient(123deg, #008559, #007e94, #0073e5);
+  }
+
+  .box-theme-teal-dark::before {
+    background: linear-gradient(123deg, #00bd6b, #00a4bd, #0096fa);
+  }
+
+  /* Blue Theme */
+  .box-theme-blue::before {
+    background: linear-gradient(123deg, #008559, #0073e5, #6842ff);
+  }
+
+  .box-theme-blue-dark::before {
+    background: linear-gradient(123deg, #00bd6b, #0096fa, #8575ff);
+  }
+
+  /* Violet Theme */
+  .box-theme-violet::before {
+    background: linear-gradient(123deg, #962eff, #0073e5, #007e94);
+  }
+
+  .box-theme-violet-dark::before {
+    background: linear-gradient(123deg, #ad5cff, #0096fa, #00a4bd);
+  }
+
+  /* Purple Theme */
+  .box-theme-purple::before {
+    background: linear-gradient(123deg, #d600ba, #6842ff, #007e94);
+  }
+
+  .box-theme-purple-dark::before {
+    background: linear-gradient(123deg, #ff1ae0, #8575ff, #00a4bd);
+  }
+  
+.box h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.box p {
+  margin: 10px 0 0;
+  color: #666;
+}
+
+  /* Additional Shadow Effects */
+  .box-always::before {
+    filter: blur(15px);
+  }
+
+  .box-hoverable:hover::before {
+    filter: blur(20px);
+  }
+
+  .box-onHover:hover::before {
+    filter: blur(15px);
+  }
+
+  .box-offHover::before {
+    filter: blur(15px);
+  }
+
+  .box-offHover:hover::before {
+    filter: none;
+  }
+
+  .box-pressable:active::before {
+    filter: blur(8px) !important;
+  }

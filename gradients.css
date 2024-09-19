@@ -1,0 +1,27 @@
+.header-gradient {
+    /*height: 300px;*/
+    background: linear-gradient(123deg, #00bd6b, #00fa9a, #8575ff);
+    /*background: linear-gradient(123deg, #d600ba, #6842ff, #007e94);*/
+    background: linear-gradient(123deg, #d14600, #c300e0, #6842ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 8s ease infinite;
+  }
+
+  .header-gradient-light {
+    background: linear-gradient(123deg, #a0e7e5, #b4f8c8, #ffdac1, #6842ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 16s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
